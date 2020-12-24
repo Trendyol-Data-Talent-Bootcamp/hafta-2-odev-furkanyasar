@@ -1,4 +1,4 @@
-#Soru 1) 1980’den itibaren spor grubu bazında en çok madalya alan 1. 3. 5. ülkeyi bulalım.
+# Soru 1) 1980’den itibaren spor grubu bazında en çok madalya alan 1. 3. 5. ülkeyi bulalım.
 
 ---
 
@@ -20,7 +20,7 @@ order by madalya_sayisi desc
 | 5     | China         |            679 |
 
 
-Tabloya göre 1980'den beri en çok madalya alan ülkeler:
+**Tabloya göre 1980'den beri en çok madalya alan ülkeler:**
 1. ülke `1837` madalya ile `United States`
 3. ülke `736` madalya ile `Soviet Union`
 5. ülke `679` madalya ile `China` 
