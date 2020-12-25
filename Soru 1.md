@@ -3,24 +3,25 @@
 ---
 
 ```SQL
-select Country, count(1) as madalya_sayisi
+select Country, event, count(1) as madalya_sayisi
 from sample.summer_medals 
 where Year >= 1980
-group by Country
+group by Country, event
 order by madalya_sayisi desc
 ```
 
 
-| Satır | Country       | madalya_sayisi |
-| ------|---------------| --------------:|
-| 1     | United States |           1837 |
-| 2     | Australia     |            774 |
-| 3     | Soviet Union  |            736 |
-| 4     | Germany       |            691 |
-| 5     | China         |            679 |
+| Satır | Country       | event      | madalya_sayisi |
+| ------|---------------| -----------|--------------: |
+| 1     | United States | basketball |            168 |
+| 2     | Netherlands   | hockey     |            159 |
+| 3     | Australia     | hockey     |            129 |
+| 4     | Cuba          | baseball   |            111 |
+| 5     | Brazil        | football   |            109 |
 
 
-**Tabloya göre 1980'den beri en çok madalya alan ülkeler:**
-1. ülke `1837` madalya ile `United States`
-3. ülke `736` madalya ile `Soviet Union`
-5. ülke `679` madalya ile `China` 
+**Tabloya göre 1980'den beri spor grubu bazında en çok madalya alan ülkeler:**
+1. ülke `168` madalya ile `basketball` kategorisinde `United States`
+3. ülke `129` madalya ile `hockey` kategorisinde `Australia`
+5. ülke `109` madalya ile `football` kategorisinde `Brazil` 
+
